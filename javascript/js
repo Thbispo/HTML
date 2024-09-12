@@ -1,0 +1,88 @@
+//Usando o laço for
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
+
+// Usando o laço for para imprimir números pares de 1 a 20
+for (let i = 1; i <= 20; i++) {
+    if (i % 2 === 0) { 
+        console.log(i);
+    }
+}
+
+//Somar números de 1 a 100
+let soma = 0;
+
+for (let i = 1; i <= 100; i++) {
+    soma += i; 
+console.log("A soma de todos os números de 1 a 100 é:", soma);
+
+
+//Imprima todos os números pares de 1 a 20 utilizando um laço de repetição
+
+ for (let i = 1; i <= 20; i++) {
+    if (i % 2 === 0) {
+        console.log(i);
+    }
+ }
+
+// Função para verificar se um número é primo
+function isPrime(num) {
+    if (num <= 1) return false; 
+    if (num === 2) return true; 
+    if (num % 2 === 0) return false; 
+
+    for (let i = 3; i * i <= num; i += 2) {
+        if (num % i === 0) return false;
+    }
+
+    return true;
+}
+
+// Imprime números primos de 1 a 50
+for (let i = 1; i <= 50; i++) {
+    if (isPrime(i)) {
+     console.log(i);
+    }
+}
+
+//Sequência de Fibonacci
+let a = 0;
+let b = 1;
+
+for (let i = 0; i < 10; i++) {
+    console.log(a);
+    [a, b] = [b, a + b]; 
+}
+
+
+//Soma de digitos
+
+const numero = prompt("Digite um número:");
+
+const numeroInteiro = parseInt(numero, 10);
+
+if (isNaN(numeroInteiro) || numeroInteiro < 0) {
+    console.log("Digite um número inteiro não negativo.");
+} else {
+    let soma = 0;
+    
+    for (let num = numeroInteiro; num > 0; num = Math.floor(num / 10)) {
+        soma += num % 10;
+    }
+    
+    console.log("A soma dos dígitos é:", soma);
+}
+
+//Contagem regressiva
+
+// Laço for para contagem regressiva de 10 até 0
+for (let i = 10; i >= 0; i--) {
+    console.log(i);
+}
+
+//Iprimir uma frase 10 vezes
+lrt = i
+for (let i = 0; i < 10; i++) {
+    console.log("Vai Corinthians");
+}

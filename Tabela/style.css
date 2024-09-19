@@ -1,0 +1,33 @@
+H1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    border: 2px solid rgb(red, green, blue);
+    font-family: sans-serif;
+    letter-spacing: 1px ;
+    width: 50% ;
+}
+
+thead{
+    background-color: rgb(113, 93, 228);
+}
+
+th, td{
+    border: 2px groove;
+    padding: 8px 10px;
+}
+
+tbody{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+tfoot{
+    background-color: bisque;
+    text-align: center;
+}

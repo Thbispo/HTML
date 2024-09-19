@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(40, 92, 48);
+
+}
+h2{
+    font-size: 50px;
+    background-color: rgb(255, 255, 255);
+}
+
+h1{
+    font-size: 50px;text-align: center;
+background-color: rgb(255, 255, 255);
+}
+   
+Galeria{
+height: 250px;
+width: 250px;  
+object-fit: cover;
+object-position: top;
+
+}
+
+.capa{
+    width: 100%;
+}
+
+    

@@ -18,15 +18,23 @@
  
 .menu-principal ul li{
     display: inline-block;
+
 }
  
 .menu-principal ul li a{
     color: white;
     text-decoration: none;
+    /*Remove o sublinhado padrao dos links para que eles fiquem mais limpos */
     text-transform: uppercase;
+    /* uppercase - Coverte tudo para maiusculo
+    lowercase: Coverte para minusculo 
+    none: Remove qualqer transformação*/
+   
     padding: 5px 20px;
     border: 1px solid transparent;
+/* Define uma borda uma borda invisivel ao redor do link.Isso pode ser util para evitar mudanças de layout ao passar o mouse,ja que a borda*/ 
     transition: 0,06 ease;
+    /* Define a transição suave para as propriedades que mudam (como cor de fundo), que ocorrera em 0.06 segundos.Isso cria um efeito visual agradavel durante interação.  */
 }
  
 .menu-principal ul li a:hover{
@@ -45,3 +53,145 @@
     justify-content: space-between;
 
 }
+
+h1 {
+    font-size: 70px;
+    color: white;
+    margin: 30px;
+}
+.btn{
+    border: 1px solid white;
+    padding: 10px 80px;
+    color: white;
+    text-decoration: none;
+    transition: 0.06s ease ;
+    margin: 10px;
+}
+
+.btn:hover {
+    background-color: white;
+    color:black
+}
+
+.conteudo-banner{
+    height: 438px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*row: organiza os itens horizontalmente, da esquerda para a direita 
+    row-reverse: organiza os itens horinzoltalmente,da direita para a esquerda
+    column-reverse: organiza os itens verticalmente, de baixo para cima 
+    column: organiza os itens verticalmente, de cima para baixo
+    */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  /* Estilo geral da seção */
+  .section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px; /* Largura máxima da seção */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Títulos das seções */
+  h2 {
+    text-align: left;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo dos passeios */
+  .tours {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px; /* Espaçamento entre os passeios */
+  }
+  
+  .tour {
+    background-color: #e9ecef;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 200px; /* Largura máxima de cada tour */
+    text-align: center;
+    transition: transform 0.3s; /* Transição suave ao passar o mouse */
+  }
+  
+  .tour:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+  }
+  
+  .tour img {
+    width: 100%; /* Imagem ocupa toda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+  
+  .caption {
+    padding: 10px;
+    font-weight: bold;
+    background-color: #C95E10;
+    color: #ddd;
+  }
+  
+  /* Estilo da tabela de valores */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #C95E10;
+    color: white;
+  }
+  
+  .note {
+    margin-top: 10px;
+    font-style: italic;
+    text-align: center;
+    color: black;
+  }
+  
+  /* Estilo da seção de contato */
+  .contact {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.1em;
+  }
+  
+  .contact i {
+    margin-right: 5px; /* Espaçamento entre o ícone e o texto */
+  }
+  
+  /* Estilo do botão de voltar ao topo */
+  .back-to-top {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .back-to-top a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .back-to-top a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+  }
+  

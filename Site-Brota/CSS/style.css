@@ -90,48 +90,69 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
   }
   
   /* Estilo geral da seção */
   .section {
     padding: 20px;
     margin: 20px auto;
-    max-width: 800px; /* Largura máxima da seção */
+    max-width: 1520px; /* Largura máxima da seção */
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   }
-  
+  .back-to-top-alt {
+    text-align: right;
+    margin: 20px 10px;
+}
+
+.back-to-top-alt a {
+    display: inline-block;
+    background-color: #ffffff; /* Cor de fundo do botão */
+    color: rgb(0, 0, 0); /* Cor do texto */
+    padding: 5px 10px; /* Espaçamento interno do botão */
+    border-radius: 3px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: bold; /* Texto em negrito */
+    transition: background-color 0.6s; /* Transição suave ao passar o mouse */
+}
+
+.back-to-top-alt a:hover {
+    background-color: #acacac; /* Cor de fundo ao passar o mouse */
+}
+
+ 
   /* Títulos das seções */
-  h2 {
+ h2 {
     text-align: left;
     color: #000000;
     margin-bottom: 20px;
   }
-  
+ 
   /* Estilo dos passeios */
   .tours {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 15px; /* Espaçamento entre os passeios */
+    gap: 60px; /* Espaçamento entre os passeios */
   }
-  
   .tour {
     background-color: #e9ecef;
     border-radius: 8px;
     overflow: hidden;
-    max-width: 200px; /* Largura máxima de cada tour */
+    max-width: 350px; /* Largura máxima de cada tour */
     text-align: center;
-    transition: transform 0.3s; /* Transição suave ao passar o mouse */
+    transition: transform 0.6s; /* Transição suave ao passar o mouse */
   }
   
   .tour:hover {
-    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    transform: scale(1.3); /* Efeito de zoom ao passar o mouse */
+    filter: grayscale(100%);
   }
   
   .tour img {
+    
     width: 100%; /* Imagem ocupa toda a largura do contêiner */
     height: auto; /* Mantém a proporção da imagem */
   }
@@ -140,58 +161,99 @@ body {
     padding: 10px;
     font-weight: bold;
     background-color: #C95E10;
-    color: #ddd;
+    color: #ffffff;
+    
   }
   
-  /* Estilo da tabela de valores */
-  table {
-    width: 100%;
+  table{
+    margin-left: auto;
+    margin-right: auto;
     border-collapse: collapse;
-    margin-top: 20px;
-  }
+    border: 20px solid rgb(red, green, blue);
+    font-family: sans-serif;
+    letter-spacing: 1px ;
+    width: 60% ;
+}
+
+th, td {
+    border: 1px solid #000000; /* Borda das células */
+    padding: 8px; /* Espaçamento interno das células */
+    text-align: center; /* Alinhamento à esquerda do texto */
+}
+
+th {
+    background-color: #c0c0c0;
+    color: #000000; /* Cor de fundo do cabeçalho */
+    font-weight: bold; /* Negrito para o cabeçalho */
+}
+
   
-  th, td {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
+  .note{
+text-align: center;
+background-color: #ffffff;
+color: #000000;
+
   }
-  
-  th {
-    background-color: #C95E10;
-    color: white;
-  }
-  
-  .note {
-    margin-top: 10px;
-    font-style: italic;
-    text-align: center;
-    color: black;
-  }
-  
-  /* Estilo da seção de contato */
+
+
+
+
+/* Estilo da seção de contato */
   .contact {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 1.1em;
+    
   }
   
   .contact i {
-    margin-right: 5px; /* Espaçamento entre o ícone e o texto */
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
   }
-  
-  /* Estilo do botão de voltar ao topo */
   .back-to-top {
-    text-align: center;
-    margin: 20px 0;
-  }
-  
-  .back-to-top a {
+    text-align: right; /* Fixa o botão na tela */
+    position:fixed;
+    bottom: 35px; /* Distância do fundo da tela */
+    right: 35px; /* Distância da direita da tela */
+    background-color: #ffffff; /* Cor de fundo do botão */
+    color: rgb(0, 0, 0); /* Cor do texto */
+    padding: 5px 15px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-decoration: solid; /* Remove sublinhado */
+    font-weight: bold; /* Texto em negrito */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efeito 3D */
+    transition: background-color 0.3s; /* Transição suave ao passar o mouse */
+}
+
+.back-to-top:hover {
+    background-color: #adadad; /* Cor de fundo ao passar o mouse */
     text-decoration: none;
-    color: black;
-    font-weight: bold;
-  }
-  
-  .back-to-top a:hover {
-    text-decoration: underline; /* Sublinha ao passar o mouse */
-  }
+}
+
+
+footer {
+  background-color: #b9b9b9; /* Cor de fundo */
+  color: rgb(0, 0, 0); /* Cor do texto */
+  text-align: center; /* Centraliza o texto */
+  padding: 50px; /* Espaçamento interno */
+}
+
+ul {
+  list-style-type: none; /* Remove marcadores da lista */
+  padding: 0; /* Remove espaçamento padrão */
+}
+
+li {
+  display: inline; /* Exibe itens da lista na horizontal */
+  margin: 0 15px; /* Espaçamento entre os links */
+}
+
+a {
+  color: rgb(0, 0, 0); /* Cor dos links */
+  text-decoration: none; /* Remove o sublinhado */
+}
+
+a:hover {
+  text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+
   

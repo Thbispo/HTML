@@ -1,0 +1,90 @@
+body {
+  font-family: "Passero One";
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+}
+
+.logotipo {
+  position: absolute;
+  top: 75px;
+  left: 75px;
+}
+
+.container {
+font-family: "Passero One";
+  text-align: center;
+  margin: 5px;
+  
+}
+
+.titulo {
+  margin: 20px 0;
+}
+
+.tours {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.tour {
+  text-align: center;
+  margin: 10px;
+  font-family: "Passero One";
+}
+
+.tour-image {
+  width: 270px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 9px;
+}
+
+.caption {
+  margin-top: 5px;
+  font-weight: bold;
+
+}
+
+.Parceiros {
+  padding: 20px;
+  text-align: center;
+  font-family: "Passero One";
+}
+
+.restaurante-image {
+  width: 150px;
+  height: auto;
+  margin: 10px;
+}
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  font-family: "Passero One";
+}
+
+footer nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer nav ul li {
+  display: inline;
+  margin: 10px;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
